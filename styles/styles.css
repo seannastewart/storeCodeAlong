@@ -710,6 +710,68 @@ main section {
   display: block;
 }
 
+.shop section {
+  padding: 90px 0;
+  margin: 0;
+}
+
+.inventory h2 {
+  text-align: center;
+}
+.inventory .product {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.inventory .product a {
+  display: block;
+}
+.inventory .product a:hover {
+  -webkit-transform: rotateZ(2deg) translate(5px);
+          transform: rotateZ(2deg) translate(5px);
+}
+.inventory .product a:focus {
+  -webkit-transform: rotateZ(2deg) translate(5px);
+          transform: rotateZ(2deg) translate(5px);
+}
+
+.guarantees {
+  background-color: #fff5f5;
+  position: relative;
+  text-align: center;
+}
+.guarantees::before {
+  content: "";
+  background-image: url(../assets/wave-3.svg);
+  background-color: #fff5f5;
+  background-position: top center;
+  position: absolute;
+  background-size: 100% 60px;
+  background-repeat: repeat-x;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -60px;
+  height: 3rem;
+}
+
+.shopOptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.guaranteeContainer {
+  width: calc(25% - 40px);
+  margin: 0 20px;
+}
+
 footer {
   background-color: #084b6d;
   color: #fff;
